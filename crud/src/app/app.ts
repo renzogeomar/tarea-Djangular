@@ -22,7 +22,7 @@ export class App {
     this.api.getAllMovies().subscribe(
       data => {
         console.log(data);
-        // this.movies = data; // Descomenta si data contiene un array válido
+        this.movies = data; // Descomenta si data contiene un array válido
       },
       error => {
         console.error(error);
